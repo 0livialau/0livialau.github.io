@@ -1,7 +1,7 @@
 <template>
-    <v-parallax src="@/assets/images/background_night.svg" height="3200" id="home-background">
+    <v-parallax src="@/assets/images/background_night.svg" :height="$vuetify.breakpoint.smAndDown ? 2850 : 3200" id="home-background">
 
-        <!-- <div class="d-flex align-content-start justify-space-around flex-wrap">
+        <v-layout v-if="$vuetify.breakpoint.smAndDown" class="d-flex justify-space-around flex-wrap">
             <v-card v-for="(trip) in tripsArray" :key="trip.id"
                 width="450" class="ma-2"
             >
@@ -12,9 +12,9 @@
                     {{ trip.desc }}
                 </v-card-text>
             </v-card>
-        </div> -->
-        <v-layout class="d-flex align-content-start justify-space-around">
-            <v-timeline :dense="$vuetify.breakpoint.smAndDown">
+        </v-layout>
+        <v-layout v-else class="d-flex align-content-start justify-space-around">
+            <v-timeline>
                 <v-timeline-item v-for="(trip) in tripsArray" :key="trip.id"
                     color="yellow" fill-dot small
                 >
@@ -29,7 +29,6 @@
                     >
                         <v-img max-height="300" :src="trip.img"></v-img>
                         <v-card-title> {{ trip.title }}</v-card-title>
-                        <v-card-subtitle v-if="$vuetify.breakpoint.smAndDown">{{ trip.when }}</v-card-subtitle>
                         <v-card-text>
                             {{ trip.desc }}
                         </v-card-text>
