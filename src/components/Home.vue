@@ -11,14 +11,14 @@
         <v-row align="center" justify="center">
             <v-col cols="12" sm="3" xs="1"></v-col>
             <v-col class="text-center" cols="12" sm="6" xs="10">
-                <v-avatar size="250">
-                    <v-img src="@/assets/images/profile_cartoon.jpg"></v-img>
+                <v-avatar size="170">
+                    <v-img src="@/assets/images/profile.jpg"></v-img>
                 </v-avatar>
                 <div class="pt-7">
                     <h3 class="gray--text text-center font-weight-light pb-7">Welcome to my page!</h3>
                     <p class="gray--text text-justify">"I love discovering new places above and below the water. I got PADI open water certified in 2017
                     and have been exploring the waters as often as I can. When I am not traveling, I am spending time 
-                    with my cockatiel, BB, or petting random dogs on the streets of Boston! I am a Senior Software Engineer
+                    with my cockatiel, BB, or petting random dogs on the streets of Boston -- unless its a weekday, then I am a Senior Software Engineer
                     at Fortify, a 3D printing startup."</p>
                 </div>
             </v-col>

@@ -83,7 +83,7 @@
 
     <v-footer app inset dark padless id="footer">
         <v-card flat tile class="primary text-center">
-            <v-card-text>
+            <v-card-text class="pt-2 pb-0">
                 <v-btn class="mx-4 secondary--text" icon href="https://www.instagram.com/traveling_olive/" target="_blank">
                     <v-icon size="36px">mdi-instagram</v-icon>
                 </v-btn>
@@ -92,7 +92,7 @@
                 </v-btn>
             </v-card-text>
 
-            <v-card-text class="gray--text pt-0">
+            <v-card-text class="gray--text py-2">
                 @2021 Olivia Lau. All rights reserved.
             </v-card-text>
         </v-card>
