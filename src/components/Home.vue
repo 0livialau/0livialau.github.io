@@ -4,7 +4,7 @@
             <v-col class="text-center" cols="12">
                 <h1 class="display-1 font-weight-light mb-4 secondary--text">The Traveling Olive</h1>
                 <h4 class="font-italic overline secondary--text">Traveler . Software Engineer . Bird Mom</h4>
-            <v-img src="@/assets/images/logo_simple.png" contain height="120" class="mt-6"></v-img>
+            <v-img src="@/assets/images/logo_small_teal.svg" contain height="200" class="mt-6"></v-img>
             </v-col>
         </v-row>
 
@@ -14,12 +14,13 @@
                 <v-avatar size="170">
                     <v-img src="@/assets/images/profile.jpg"></v-img>
                 </v-avatar>
-                <div class="pt-7">
+                <div class="pt-7 px-8">
                     <h3 class="gray--text text-center font-weight-light pb-7">Welcome to my page!</h3>
-                    <p class="gray--text text-justify">"I love discovering new places above and below the water. I got PADI open water certified in 2017
+                    <p class="gray--text text-justify">"I love discovering new places above and below the water. I'm PADI open water certified 
                     and have been exploring the waters as often as I can. When I am not traveling, I am spending time 
-                    with my cockatiel, BB, or petting random dogs on the streets of Boston -- unless its a weekday, then I am a Senior Software Engineer
-                    at Fortify, a 3D printing startup."</p>
+                    with my cockatiel, BB, or petting random dogs on the streets of Boston -- unless it's a weekday, then I'm usually home 
+                    working as a software engineer."
+                    </p>
                 </div>
             </v-col>
             <v-col cols="12" sm="3" xs="1"></v-col>
