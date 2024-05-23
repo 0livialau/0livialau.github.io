@@ -1,5 +1,5 @@
 <template>
-    <v-parallax src="@/assets/images/background_night.svg" :height="$vuetify.breakpoint.smAndDown ? 2850 : 3200" id="home-background">
+    <v-parallax src="@/assets/images/background_night.svg" :height="$vuetify.breakpoint.smAndDown ? 2850 : 6000" id="home-background">
 
         <v-layout v-if="$vuetify.breakpoint.smAndDown" class="d-flex justify-space-around flex-wrap">
             <v-card v-for="(trip) in tripsArray" :key="trip.id"
@@ -45,7 +45,57 @@ export default {
         return{
             tripsArray: [
                 {
-                    id: 8,
+                    id: 14,
+                    title: 'Netherlands',
+                    when: 'April 2024',
+                    img: require("@/assets/images/travel/2024/tulip.jpg"),
+                    desc: "In the Netherlands for a friend's wedding! Land of tulips, \
+                        windmills, and stroop waffels! This was our first trip to \
+                        Europe together! And shockingly, the time different from this \
+                        trip made us both 'morning people'."
+                }, 
+                {
+                    id: 13,
+                    title: 'Alaska',
+                    when: 'July 2023',
+                    img: require("@/assets/images/travel/2023/alaska.jpg"),
+                    desc: "Following our Banff trip, we headed to Alaska to meet up with \
+                        some friends. Even with a lost luggage, the trip couldn't have been \
+                        better. I went camping (more like glamping) for the first time and loved it! \
+                        We had booked hotels for 2 nights, but ended up canceling them because \
+                        we were so comfortable with the camping gear. We went halibut and salmon \
+                        fishing and was able to bring some fish home. This trip has been both of \
+                        our favorites so far!"
+                },    
+                {
+                    id: 12,
+                    title: 'Banff, Canada',
+                    when: 'June 2023',
+                    img: require("@/assets/images/travel/2023/engagement.jpg"),
+                    desc: "We got engaged in Banff overlooking Lake Louise! Such a memorable \
+                        experience -- I feel so lucky. Part 1 of our trip 'out West'."
+                },
+                {
+                    id: 11,
+                    title: 'Punta Cana',
+                    when: 'June 2022',
+                    img: require("@/assets/images/travel/2022/punta_cana.jpg"),
+                    desc: "Kyle and I gave all-inclusive resorts a try. Much different \
+                        from our usual adventures, but definitely a different type of \
+                        travel that we got used to very quickly! I loved the food and \
+                        drinks, especially the fresh coconuts."
+                },
+                {
+                    id: 10,
+                    title: 'Aruba',
+                    when: 'April 2022',
+                    img: require("@/assets/images/travel/2022/aruba_flamingo.jpg"),
+                    desc: "Girls trip to Aruba! We hung out with flamingos on a beach and \
+                        toured the island on ATVs. Such fun adventures and bonding experiences \
+                        with my high school friends."
+                },
+                {
+                    id: 9,
                     title: 'Saint Thomas, USVI',
                     when: 'January 2020',
                     img: require("@/assets/images/travel/2020/stt/drone_beach.jpg"),
@@ -53,6 +103,15 @@ export default {
                         snorkeling, and food. We did a day trip to Waterlemon Cay in St. John. \
                         It was sad to see buildings on both islands destroyed by hurricane Maria. \
                         (Our last trip before COVID) "
+                },
+                {
+                    id: 8,
+                    title: 'Santorini, Greece',
+                    when: 'June 2019',
+                    img: require("@/assets/images/travel/2019/santorini.jpg"),
+                    desc: "Santorini was amazing. We went during the shoulder season, so it wasn't \
+                        too busy. The food was amazing -- the souvlaki chicken and Santorini salad \
+                        were some of my favs. Definitely a place I'd like to visit again."
                 },
                 {
                     id: 7,

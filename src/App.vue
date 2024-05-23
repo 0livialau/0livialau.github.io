@@ -18,7 +18,7 @@
             </v-tab>
 
             <v-tab class="pa-2" to="/">
-                <v-img src="./assets/images/logo_simple.png" contain height="45" class="mb-2"></v-img>
+                <v-img src="./assets/images/logo_small_teal.svg" contain height="80" class="mb-2"></v-img>
             </v-tab>
 
             <v-tab class="pa-2 overline" to="/bird">
@@ -68,7 +68,7 @@
             <v-spacer />
 
             <v-toolbar-title @click="$router.push('/')">
-                <v-img src="./assets/images/logo_simple.png" contain height="45" class="mb-2"></v-img>
+                <v-img src="./assets/images/logo_small_teal.svg" contain height="80" class="mb-2"></v-img>
             </v-toolbar-title>
 
             <v-spacer />
@@ -93,7 +93,7 @@
             </v-card-text>
 
             <v-card-text class="gray--text py-2">
-                @2021 Olivia Lau. All rights reserved.
+                @{{ new Date().getFullYear() }} Olivia Lau. All rights reserved.
             </v-card-text>
         </v-card>
     </v-footer>
